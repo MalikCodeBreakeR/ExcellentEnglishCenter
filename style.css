@@ -1,0 +1,125 @@
+.cardImg{
+    width: 90%;
+    margin-top: 10px;
+    border: 2px solid rgb(73, 171, 236);
+    border-radius: 3em;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.mainBox{
+    display: flex;
+}
+
+.mainLeft{
+    width: 70%;
+    box-sizing: border-box;
+}
+.mainRight{
+    margin-top: 50px;
+    width: 30%;
+    box-sizing: border-box;
+    margin-left: 20px;
+    display: inline;
+}
+
+footer{
+    padding-top: 20px;
+}
+
+.footImg{
+    width: 6%;
+    border-radius: 100%;
+    border: 2px solid red;
+}
+
+
+.photoTag{
+    bottom: 0;
+    right: 0;
+    background-color: aqua;
+}
+
+@media (max-width: 767px){
+    .mainLeft{
+        width: 100%;
+    }
+    .mainRight{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+    }
+    .mainBox{
+        display: inline;
+    }
+    .footImg{
+        width: 10%;
+        border-radius: 100%;
+    }
+    footer{
+        padding-top: 0;
+    }
+
+    .cardImg{
+        width: 40%;
+        margin-top: 10px;
+        border: 2px solid rgb(73, 171, 236);
+        border-radius: 3em;
+    }
+}
+
+
+/* //.moving-text */
+
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    animation: moveText 10s linear infinite, changeColor 5s linear infinite;
+    z-index: 2;
+    bottom: 0;
+}
+
+/* Moving from right to left */
+@keyframes moveText {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+/* Changing colors */
+@keyframes changeColor {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+}
+
+header{
+    border:3px solid rgb(0, 162, 255);
+    background: linear-gradient(rgb(255, 169, 10), white, rgb(48, 240, 48));
+}
+
+body{
+    background: linear-gradient(rgb(255, 175, 26), white, rgb(127, 238, 127));
+
+}
+
+*{
+    color: black;
+    font-weight: bold;
+}
+
+.cardFrame{
+    border: 2px solid rgb(17, 0, 255);
+    box-sizing: border-box;
+    background: radial-gradient(yellow, aqua);
+}
